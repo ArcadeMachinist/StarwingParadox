@@ -1,0 +1,90 @@
+{
+    "updated_at" : "2018-11-01 09:00:00",
+    "fixed_term": {
+        "from_at": "2018-11-01 09:00:00",
+        "to_at": "2018-12-31 09:00:00"
+    },
+    "role_id": 1,
+    "records": [
+        {
+            "order": 1,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 1,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 2,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 2,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 3,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 4,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 4,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 15,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 5,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 28,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 6,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 35,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 7,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 44,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 8,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 72,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 9,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 107,
+            "use_count": 0,
+            "use_rate": 0
+        },
+        {
+            "order": 10,
+            "change": 1,
+            "role_id": 1,
+            "weapon_id": 0,
+            "use_count": 0,
+            "use_rate": 0
+        }
+    ]
+}

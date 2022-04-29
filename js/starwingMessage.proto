@@ -1,0 +1,390 @@
+package starwing;
+syntax = "proto3";
+
+message PbMessage {
+    int64 packetId = 1;
+    int64 messageType = 2;
+    optional int64 sessionId = 3;
+    oneof Message {
+         NotifyPushMessage NotifyPushMessage = 0x65;
+         Ping Ping = 0x66;
+
+
+         RequestEntryMatching RequestEntryMatching = 200;
+         ResponseEntryMatching ResponseEntryMatching = 201;
+         NotifyMatchBegin RequestCancelMatching = 0xca;         // 202 RequestCancelMatching
+         // 203 ResponseCancelBurstGroup
+         NotifyMatchFailure NotifyMatchFailure = 0xcc;          // 204
+         ResponseEntryMatching ResponseEntryReMatching = 205;   // 205 ResponseEntryReMatching
+         NotifyMatchEscape RequestJoinMatching = 206;           // 206 RequestJoinMatching 0xcf
+         NotifyMatchMade NotifyMatchMade = 302;
+         NotifyMatchBegin NotifyMatchBegin = 304;               // 0x130
+         NotifyMatchOpen NotifyMatchOpen = 601;                 // 0x259
+         RequestEntryBurstGroup RequestEntryBurstGroup = 208;   // 0xd0  208 Co-Op begin
+         ResponseEntryBurstGroup ResponseEntryBurstGroup = 209; // 0xd1  ok to begin, no list provided here
+
+         RequestChangeBurstGroupMode RequestChangeBurstGroupMode = 210; // 210 "Create room"
+         ResponseChangeBurstGroupMode ResponseChangeBurstGroupMode = 211; // Resp. to Create Room, returns people INSIDE
+         NotifyMatchBreak RequestUpdateBurstGroup  = 214;        // 214 This lists ROOMS
+         NotifyBurstGroupUpdated ResponseUpdateBurstGroup = 215; // This lists  0xd7
+         RequestBurstGroupSelect RequestBurstGroupSelect = 216;  // 216 join room from list 0xd8
+         ResponseBurstGroupSelect ResponseBurstGroupSelect = 217; // "Select OK", no list here
+
+         NotifyBurstGroupUpdated NotifyBurstGroupUpdated = 307;   // same as 215, but unsolicited
+         NotifyBurstGroupApply NotifyBurstGroupApply = 308; // 0x134
+         NotifyBurstMade NotifyBurstMade = 310;             // 0x136
+         NotifyBurstMeets NotifyBurstMeets = 311;             // 0x137
+         // 309 = kickplayer from your room NotifyBurstRejectPlayer
+         // 400 = leave room aka NotifyMatchFailure
+    }
+}
+
+message Ping {
+    int64 unixTimestamp = 1;
+}
+
+message RequestRegisterDedicatedServer {
+    DedicatedServer Server = 1;
+}
+message ResponseRegisterDedicatedServer {
+    int64 MessageId = 1;
+    DedicatedServer Server = 2;
+}
+
+message NotifyUpdateDedicatedServerState {
+    int32 State = 1;
+    int64 PlayerCount = 2;
+
+}
+
+message RequestEntryMatching {
+    int64 UserId = 1;
+    int64 MacAddress = 2;
+    int64 CardId = 3;
+    string GameVersion = 4;
+    uint32 LocationId = 5;
+    string LocationName = 6;
+    optional int32 PlayMode = 7;
+    optional uint32 Difficulty =  8;
+    optional int64 CoopModeIndex = 9;
+    optional int64 OfficialType = 10;
+    optional int32 MatchMode = 11;
+    optional bool NotIntrude = 12;
+    optional bool Tournament = 13;
+    optional bool Event = 14;
+    optional int32 EventGroupId = 15;
+    optional uint32 EventGroupTeam = 16;
+    optional uint32 EventGroupSeat = 17;
+    optional uint32 StageId = 18;
+    optional bool EventManager = 19;
+    optional int32 EventPlayerNum = 20;
+    optional int64 BurstGroupId = 21;
+    optional uint32 BurstNum = 22;
+    optional int32 StageMode = 23;
+    optional uint32 EventRuleId = 24;
+    optional int32 GameMode = 25;
+}
+
+message ResponseEntryMatching {
+    int64 messageId = 1;
+    int64 timeout = 2;
+}
+
+message NotifyMatchEscape {
+    int64 matchId = 1;
+    int64 PlayerId = 2;
+}
+
+message NotifyMatchUpdated {
+    Match Match = 1;
+    int32 Type = 2;
+}
+message NotifyMatchMade {
+    Match Match = 1;
+    DedicatedServer ds = 2;
+    optional int32 MatchType = 3;
+    optional int32 GameMode = 4;
+    optional uint32 StageId = 5;
+}
+
+message NotifyMatchBreak {
+    int64 MatchId = 1;
+    optional int32 Result = 2; // actually Enum
+}
+
+message NotifyMatchClosed {
+    int64 MatchId = 1;
+    optional int32 Reason = 2; // actually Enum
+}
+
+message NotifyMatchLeave {
+    optional int64 MatchId = 1;
+    optional int64 PlayerId = 2;
+    optional int64 Timeout = 3; // actually Enum
+}
+
+
+message NotifyMatchChangeState {
+    optional int64 MatchId = 1;
+    optional uint32 TeamIndex = 2;
+    optional int32 PinchLevel = 3;
+    optional uint32 Force = 4;
+    optional int64 Timeout = 5;
+}
+
+
+message NotifyMatchDiscontinue {
+    int64 MatchId = 1;
+    optional int32 Result = 2; // actually Enum
+}
+
+message NotifyMatchFailure {
+    int64 MatchId = 1;
+    int64 PlayerId = 2;
+    optional int32 Result = 3; // actually Enum
+}
+
+message NotifyMatchBegin {
+    int64 MatchId = 1;
+}
+
+message NotifyMatchOpen {
+    int64 MatchId = 1;
+}
+
+message NotifyEventMatchBreak {
+    int32 EventGroupId = 1;
+    int32 Result = 2; // actually Enum
+}
+
+message RequestAssignMatch {
+    Match Match = 1;
+    int32 GameMode = 2;
+}
+
+message ResponseAssignMatch {
+    int64 MatchId = 1;
+    int32 Result = 2;
+}
+
+message RequestEnterMatch {
+    int64 MatchId = 1;
+    int64 PlayerId = 2;
+}
+
+message ResponseEnterMatch {
+    int64 MessageId = 1;
+    int64 MatchId = 2;
+    int64 PlayerId = 3;
+    int32 Result = 4;
+}
+
+message Match {
+    optional int64 MatchId = 1;
+    optional int32 State = 2;
+    optional int32 PlayMode = 3;
+    optional uint32 Difficulty = 4;
+    optional int64 CoopModeIndex = 5;
+    optional uint32 MatchGroup = 6;
+    repeated Team Team = 7;
+    optional uint32 StageId = 8;
+    optional string Version = 9;
+    optional int32 MatchMode = 10;
+    optional bool Tournament = 11;
+    optional bool Event = 12;
+    optional bool VsCPU = 13;
+    optional int64 EndTime = 14;
+    optional int64 StageMode = 15;
+    optional int64 PlayZone = 16;
+    optional int64 RuleId = 17;
+    optional int64 GameMode = 18;
+}
+
+
+message DedicatedServer {
+    optional uint32 ServerId = 1;
+    optional int32 State = 2;
+    string address = 3;
+    string version = 4;
+    optional int64 startuptime = 5;
+    optional string language = 6;
+}
+message Team {
+    optional uint32 PlayerCount = 1;
+    repeated Player Player = 2;
+    optional uint32 PinchLevel = 3;
+    optional uint32 Force = 4;
+}
+
+message Player {
+    optional int64 PlayerId = 1;
+    optional int64 MacAddress = 2;
+    optional int64 CardId = 3;
+    optional string PlayerName = 4;
+    optional uint32 PlayerRank = 5;
+    optional uint32 BuddyId = 6;
+    optional uint32 LocationId = 7;
+    optional string LocationName = 8;
+    optional bool Intrude = 9;
+    optional int64 OfficialType = 10;
+    optional int64 BurstGroupId = 11;
+    optional uint32 BurstNum = 12;
+    optional uint32 Rank2on2 = 13;
+}
+
+message BurstPlayer {
+    optional int64 PlayerId = 1;
+    optional int64 MacAddress = 2;
+    optional int64 CardId = 3;
+    optional uint32 Playmode = 4;
+    optional uint32 Mode = 5;
+    optional int64 Number = 6;
+    optional string PlayerName = 7;
+    optional uint32 PlayerRank = 8;
+    optional int64 TitleId = 9;
+    optional uint32 LocationId = 10;
+    optional string LocationName = 11;
+    optional Emblem Emblem = 12;
+    optional uint32 MateNum = 13;
+    optional uint32 StageId = 14;
+    optional uint32 Rank2on2 = 15;
+    optional int64 TitleId2on2 = 16;
+    optional Emblem Emblem2on2 = 17;
+}
+
+
+
+
+message Emblem {
+    EmblemPart pBg = 1;
+    EmblemPart pMa = 2;
+    EmblemPart pSb = 3;
+}
+
+message EmblemPart {
+    int64 PartId = 1;
+    Vec2 Offset = 2;
+    Vec2 Scale = 3;
+    double Angle = 4;
+}
+
+message Vec2 {
+    double x = 1;
+    double y = 2;
+}
+
+message IntrudePlayer {
+    uint32 TeamIndex = 1;
+    Player Player = 2;
+}
+
+message Response {
+    int64 MessageId = 1;
+    int32 Code = 2;
+    string Message = 3;
+}
+
+message NotifyPushMessage {
+    int32 Type = 1;
+    int64 Number = 2;
+    string Message = 3;
+}
+
+message RequestEntryBurstGroup {
+    optional int64 PlayerId = 1;
+    optional int64 MacAddress = 2;
+    optional int64 CardId = 3;
+    optional string Version = 4;
+    optional uint32 LocationId = 5;
+    optional string LocationName = 6;
+    optional int32 PlayMode = 7;
+    optional int32 Mode = 8;
+    optional string PlayerName = 9;
+    optional uint32 PlayerRank = 10;
+    optional int64 TitleId = 11;
+    optional Emblem Emblem = 12;
+    optional int32 BurstMode = 13;
+    optional uint32 Rank2on2 = 14;
+    optional int64 TitleId2on2 = 15;
+    optional Emblem Emblem2on2 = 16;
+    optional int32 GameMode = 17;
+
+}
+
+message ResponseEntryBurstGroup {
+    optional int64 MessageId = 1;
+    optional int64 Timeout = 2;
+    optional uint32 BurstNumMax = 3;
+}
+
+message RequestChangeBurstGroupMode {
+    optional int64 PlayerId = 1;
+    optional int64 Mode = 2;
+    optional uint32 StageId = 3;
+}
+
+message ResponseChangeBurstGroupMode {
+    optional int64 MessageId = 1;
+    optional int32 Result = 2;
+    repeated BurstPlayer Player = 3;
+    optional uint32 StageId = 4;
+}
+
+message NotifyBurstGroupUpdated {
+    repeated BurstPlayer Player = 1;
+    optional uint32 StageId = 2;
+}
+
+
+message NotifyBurstRejectPlayer {
+    Player Player = 1; // may be repeating
+    optional int32 Mode = 2;
+    optional int64 RejectId = 3;
+}
+
+message NotifyBurstMade {
+    int64 BurstGroupId = 1;
+    optional uint32 BurstNum = 2;
+    repeated BurstPlayer Player = 3;
+    optional uint32 StageId = 4;
+}
+
+message NotifyBurstMeets {
+    optional int32 State = 1;
+    optional int64 BurstGroupId = 2;
+    optional uint32 BurstNum = 3;
+    repeated Player Player = 4;
+}
+
+message NotifyBurstMatchCancelled {
+    optional int32 Result = 1;
+}
+
+message NotifyBurstMatchBreak {
+    optional int32 Result = 1; //actually Enum
+    optional int64 TargetId = 2; // can be array?
+}
+
+
+message NotifyBurstGroupApply {
+    repeated BurstPlayer Player = 1;
+}
+
+message RequestBurstGroupSelect {
+    int64 PlayerId = 1;
+    optional int32 Mode = 2; // 1=Wait
+    repeated int64 MateId = 3;
+}
+
+message ResponseBurstGroupSelect {
+    optional int64 MessageId = 1;
+    optional int32 Result = 2;
+    optional int64 Timeout = 3;
+
+    // Unknown here - repeating int64 of mateIDs?
+}
+
+message RequestIntrudeMatch {
+    int64 MatchId = 1;
+    Player Player = 2; // IntrudePlayer!
+}

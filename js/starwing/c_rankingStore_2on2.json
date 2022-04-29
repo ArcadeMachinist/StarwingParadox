@@ -1,0 +1,940 @@
+{
+    "location_name": "バイキング",
+    "updated_at": "2020-11-01 09:00:00",
+    "fixed_term": {
+        "from_at": "2020-11-01 09:00:00",
+        "to_at": "2020-12-31 09:00:00"
+    },
+    "records": [
+        {
+            "order": 1,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "ヒカリのアズワン",
+            "buddy_id": 1,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 2,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "レイカのアズワン",
+            "buddy_id": 2,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                200,
+                201,
+                202
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 3,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 6,
+                    "design_id": 6,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 6,
+                    "design_id": 6,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "シャーリーのアズワン",
+            "buddy_id": 3,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                600,
+                601,
+                602
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 4,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "イサドラのアズワン",
+            "buddy_id": 4,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 5,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "ナギのアズワン",
+            "buddy_id": 5,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 6,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "カズマのアズワン",
+            "buddy_id": 6,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 7,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "ヒカリのアズワン",
+            "buddy_id": 1,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 8,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "レイカのアズワン",
+            "buddy_id": 2,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 9,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "シャーリーのアズワン",
+            "buddy_id": 3,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "order": 10,
+            "change": 1,
+            "emblem": {
+                "outline": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "main_design": {
+                    "part_id": 1008,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                },
+                "sub_design": {
+                    "part_id": 0,
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "scale": [
+                        1,
+                        1
+                    ],
+                    "angle": 0
+                }
+            },
+            "mecha": {
+                "head": {
+                    "part_id": 1,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "body": {
+                    "part_id": 2,
+                    "mecha_id": 1,
+                    "design_id": 1,
+                    "color_id": 0
+                },
+                "arm": {
+                    "part_id": 3,
+                    "mecha_id": 3,
+                    "design_id": 3,
+                    "color_id": 3
+                },
+                "foot": {
+                    "part_id": 4,
+                    "mecha_id": 4,
+                    "design_id": 4,
+                    "color_id": 4
+                },
+                "back_pack": {
+                    "part_id": 5,
+                    "mecha_id": 5,
+                    "design_id": 5,
+                    "color_id": 5
+                },
+                "is_decal": 1,
+                "line_color_id": 0
+            },
+            "player_name": "イサドラのアズワン",
+            "buddy_id": 4,
+            "title_id": 1,
+            "rank_id": 1,
+            "score": 0,
+            "pref_name": "未登録",
+            "group_name": "無所属",
+            "weapon_set_id_list": [
+                100,
+                101,
+                102
+            ],
+            "side_weapon_id_list": [
+                1,
+                2,
+                3
+            ]
+        }
+    ]
+}

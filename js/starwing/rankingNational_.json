@@ -1,0 +1,80 @@
+{
+    "updated_at": "2018-11-01 09:00:00",
+    "fixed_term": {
+      "from_at": "2021-11-01 09:00:00",
+      "to_at": "2021-12-01 09:00:00"
+    },
+    "records": [
+      {
+        "order": 1,
+        "change": 1,
+        "emblem": {
+          "outline": {
+            "part_id": 0,
+            "offset": [0,0],
+            "scale": [1,1],
+            "angle": 0
+          },
+          "main_design": {
+            "part_id": 1008,
+            "offset": [0,0],
+            "scale": [1,1],
+            "angle": 0
+          },
+          "sub_design": {
+            "part_id": 0,
+            "offset": [0,0],
+            "scale": [1,1],
+            "angle": 0
+          }
+        },
+        "mecha": {
+          "head": {
+            "part_id": 1,
+            "mecha_id": 1,
+            "design_id": 1,
+            "color_id": 0
+          },
+          "body": {
+            "part_id": 1,
+            "mecha_id": 1,
+            "design_id": 1,
+            "color_id": 0
+          },
+          "arm": {
+            "part_id": 1,
+            "mecha_id": 1,
+            "design_id": 1,
+            "color_id": 0
+          },
+          "foot": {
+            "part_id": 1,
+            "mecha_id": 1,
+            "design_id": 1,
+            "color_id": 0
+          },
+          "back_pack": {
+            "part_id": 1,
+            "mecha_id": 1,
+            "design_id": 1,
+            "color_id": 0
+          },
+          "is_decal": 1,
+          "line_color_id": 0
+        },
+        "player_name": "イサドラのアズワン",
+        "buddy_id": 4,
+        "title_id": 1,
+        "rank_id": 1,
+        "score": 0,
+        "pref_name": "未登録",
+        "group_name": "無所属",
+        "weapon_set_id_list": [
+          0
+        ],
+        "side_weapon_id_list": [
+          0
+        ]
+      }
+    ]
+}
