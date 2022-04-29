@@ -50,7 +50,7 @@ const pgdb = new Pool({
     user: 'paradox',
     host: 'localhost',
     database: 'paradox',
-    password: 'pArAd0x',
+    password: 'XXXXXXX',
     port: 5432
 });
 
