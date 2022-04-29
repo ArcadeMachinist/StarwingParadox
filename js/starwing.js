@@ -28,7 +28,7 @@ const app = express();
 const web_port = 4001;
 const pb_port = 6666;
 
-const matcher = "paradox.arcade.cab:"+pb_port;
+const matcher = "paradox.yourdomain.com:"+pb_port;
 const version_main = 70571;
 const version_data = 70571;
 
